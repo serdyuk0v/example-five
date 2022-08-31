@@ -6,14 +6,16 @@ public class Main {
         arrayInt[0] = 1;
         arrayInt[1] = 2;
         arrayInt[2] = 3;
-        for (int i = arrayInt.length - 1; i >= 0; i--) {
-            System.out.print(arrayInt[i]);
-            if (i > 0) {
-                System.out.print(", ");
+        for (int i = 0; i < arrayInt.length; i++) {
+            if (arrayInt[i] % 2 == 0) {
+                System.out.println(arrayInt[i]);
+            } else {
+                System.out.println(arrayInt[i] + 1);
             }
+
         }
         System.out.println();
-
+/*
         //Массив с дробными числами
         double[] arrDouble = {1.57, 7.654, 9.986};
         for (int i = arrDouble.length - 1; i >= 0; i--) {
@@ -35,5 +37,6 @@ public class Main {
                 System.out.print(", ");
             }
         }
+ */
     }
 }
